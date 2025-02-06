@@ -84,7 +84,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./noble-server-cloudimg-custom1-amd64.img
-          asset_name: noble-server-cloudimg-custom1-amd64.img
+          asset_name: noble-server-cloudimg-custom-amd64.img
           asset_content_type: application/octet-stream
 
       - name: Upload Release Asset SHA256SUM
