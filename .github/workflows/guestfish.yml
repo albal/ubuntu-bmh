@@ -37,7 +37,7 @@ jobs:
 
       - name: Fetch SSH Keys
         run: |
-          wget -nv https://github.com/albal.keys -O authorized_keys
+          wget -nv https://github.com/albal.keys -O albal.keys
           wget -nv https://github.com/maneshmistry8.keys
           cat albal.keys maneshmistry8.keys > authorized_keys
 
