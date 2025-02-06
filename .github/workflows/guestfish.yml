@@ -69,7 +69,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: 24.04.LTS-custom1
+          tag_name: 24.04.LTS-custom2
           release_name: "Ubuntu 24 LTS Custom Cloud Image"
           draft: false
           prerelease: false
@@ -80,7 +80,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./noble-server-cloudimg-custom1-amd64.img
+          asset_path: ./noble-server-cloudimg-custom-amd64.img
           asset_name: noble-server-cloudimg-custom-amd64.img
           asset_content_type: application/octet-stream
 
